@@ -98,7 +98,7 @@ $config = array (
 	 *
 	 * See this page for a list of valid timezones: http://php.net/manual/en/timezones.php
 	 */
-	'timezone' => NULL,
+	'timezone' => 'Asia/Kuala_Lumpur',
 
 	/*
 	 * Logging.
@@ -538,7 +538,7 @@ $config = array (
 	 *
 	 * (This option replaces the old 'session.handler'-option.)
 	 */
-	'store.type' => 'phpsession',
+	'store.type' => 'sql',
 
 
 	/*
@@ -547,13 +547,13 @@ $config = array (
 	 * See http://www.php.net/manual/en/pdo.drivers.php for the various
 	 * syntaxes.
 	 */
-	'store.sql.dsn' => 'sqlite:/path/to/sqlitedatabase.sq3',
+	'store.sql.dsn' => 'mysql:host=10.28.40.97;dbname=chromelab',
 
 	/*
 	 * The username and password to use when connecting to the database.
 	 */
-	'store.sql.username' => NULL,
-	'store.sql.password' => NULL,
+	'store.sql.username' => 'root',
+	'store.sql.password' => 'vxlwa8dbz',
 
 	/*
 	 * The prefix we should use on our tables.

@@ -18,7 +18,8 @@ $config = array(
 
 		// The entity ID of this SP.
 		// Can be NULL/unset, in which case an entity ID is generated based on the metadata URL.
-		'entityID' => 'https://dal.1bestarinet.net/chromelab/',
+		//'entityID' => 'https://dal.1bestarinet.net/chromelab/',
+		'entityID' => 'https://dal.1bestarinet.net/chromelab/web/app_dev.php/auth/login',
 
 		// The entity ID of the IdP this should SP should contact.
 		// Can be NULL/unset, in which case the user will be shown a list of available IdPs.
@@ -31,7 +32,8 @@ $config = array(
 		// Can be NULL/unset, in which case a builtin discovery service will be used.
 		// 'discoURL' => 'https://saml-iot.1bestarinet.net/saml2/idp/SSOService.php',
 		'privatekey' => 'saml.pem',
-	        'certificate' => 'saml.crt'
+	        'certificate' => 'saml.crt',
+		'returnto' => 'https://dal.1bestarinet.net/chromelab/web/app_dev.php/auth/login'
 	),
 
 	/*
