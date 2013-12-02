@@ -1,5 +1,5 @@
 <?php 
-
+require_once __DIR__.'/../../modules/saml/lib/Auth/Source/SP.php';
 /**
  * Helper class for accessing information about modules.
  *
