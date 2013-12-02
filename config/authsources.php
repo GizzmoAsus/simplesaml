@@ -18,17 +18,20 @@ $config = array(
 
 		// The entity ID of this SP.
 		// Can be NULL/unset, in which case an entity ID is generated based on the metadata URL.
-		'entityID' => 'quickquiz',
+		'entityID' => 'https://dal.1bestarinet.net/chromelab/',
 
 		// The entity ID of the IdP this should SP should contact.
 		// Can be NULL/unset, in which case the user will be shown a list of available IdPs.
-		'idp' => NULL,
+		//'idp' => 'https://saml-iot.1bestarinet.net/saml2/idp/SSOService.php',
+		'idp' => 'https://saml-iot.1bestarinet.net/',
+
+		'NameIDPolicy' => 'urn:oasis:names:tc:SAML:1.1:nameid-format:unspecified',
 
 		// The URL to the discovery service.
 		// Can be NULL/unset, in which case a builtin discovery service will be used.
-		'discoURL' => 'https://saml-iot.1bestarinet.net/module.php/core/loginuserpass.php',
-	    'privatekey' => 'saml.pem',
-	    'certificate' => 'saml.crt'
+		// 'discoURL' => 'https://saml-iot.1bestarinet.net/saml2/idp/SSOService.php',
+		'privatekey' => 'saml.pem',
+	        'certificate' => 'saml.crt'
 	),
 
 	/*
